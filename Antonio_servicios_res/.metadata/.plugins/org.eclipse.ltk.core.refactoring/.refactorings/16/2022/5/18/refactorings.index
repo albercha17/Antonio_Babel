@@ -1,0 +1,19 @@
+1651674774260	Delete elements
+1651674810922	Delete element
+1651675320273	Rename resource 'login.css'
+1651676120877	Delete element
+1651676123049	Delete element
+1651676411685	Move file
+1651676425208	Rename resource 'deposit.jsp'
+1651676655274	Move 'global.css' to 'css'
+1651676916949	Rename resource 'draw.jsp'
+1651679469319	Rename resource 'transfer.jsp'
+1651679606822	Rename resource 'tranferirDinero.jsp'
+1651751670892	Rename method 'validateAccount'
+1651751695771	Rename method 'consultMovements'
+1651751707253	Rename local variable 'start'
+1651751716766	Rename local variable 'end'
+1651751732809	Rename method 'depositSaldo'
+1651751747221	Rename method 'drawSaldo'
+1651751758738	Rename method 'transferSaldo'
+1651751789852	Rename local variable 'end'

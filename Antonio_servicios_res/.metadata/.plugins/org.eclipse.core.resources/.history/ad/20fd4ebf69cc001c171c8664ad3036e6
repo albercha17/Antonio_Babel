@@ -1,0 +1,30 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Transferir Dinero</title>
+<link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+<center>
+	<div class="Containers">
+
+		<h1>TRANSFERIR DINERO</h1>
+
+		<form action="Transfer" method="post">
+			<span>Numero De Cuenta Destino<input type="number" name="numeroCuentaDest"
+				placeholder="Numero De Cuenta Destino" required /></span><br><br>
+			<span>Cantidad a Transferir<input type="number" name="cantidad"
+				placeholder="Cantidad" required /></span> <input type="submit"
+				value="Transferir Dinero" />
+
+		</form>
+	</div>
+	<a href="menu.jsp" class="botonInicio">Inicio</a>
+	</center>
+</body>
+
+
+</html>

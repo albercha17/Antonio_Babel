@@ -1,0 +1,13 @@
+INDEX VERSION 1.131
+C:\Users\alberto.chaves\Documents\Antonio_servicios_res\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2429063694.index
+\15_formacion_matriculas\src\main\java
+C:\Users\alberto.chaves\Documents\Antonio_servicios_res\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1206405599.index
+\16_sistema_bancario\src\main\java
+C:\Users\alberto.chaves\Documents\Antonio_servicios_res\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4206991545.index
+\01_servicio_buscador\src\main\java
+C:\Users\alberto.chaves\Documents\Antonio_servicios_res\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4014619076.index
+\01_servicio_buscador\src\main\java
+C:\Users\alberto.chaves\Documents\Antonio_servicios_res\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1952548506.index
+\16_cuentas\src\main\java
+C:\Users\alberto.chaves\Documents\Antonio_servicios_res\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\195943477.index
+\16\src\main\java

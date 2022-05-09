@@ -1,0 +1,79 @@
+package controller;
+
+import java.util.Date;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.http.MediaType;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import dtos.MovimientoDto;
+import service.BancaService;
+
+@CrossOrigin("*")
+@Controller
+public class BancaController {
+
+	public int numeroCuenta;
+	// INYECTAMOS CLASE
+	@Autowired
+	BancaService bancaService;
+
+	@PostMapping(value = "Login")
+	public String validarUsuario(@RequestParam("numeroCuenta") int numCuenta) {
+		if(bancaService.validarCuenta(numCuenta)==null)
+			return "login";
+		this.numeroCuenta=numCuenta;
+		return "menu";
+	}
+	
+	@PostMapping(value="Ingresar")
+	public String ingresar(@RequestParam("cantidad")int cantidad) {
+		
+		if(bancaService.depositarSaldo(this.numeroCuenta,cantidad)) {
+			return "menu";
+			}
+		else {
+			return "error";
+		}
+	}
+	
+	@PostMapping(value="Retirar")
+	public String extraccion(@RequestParam("cantidad")int cantidad) {
+		
+		if(bancaService.retirarSaldo(this.numeroCuenta,cantidad)) {
+			return "menu";
+			}
+		else {
+			return "error";
+		}
+	}
+	
+	@PostMapping(value="Transferir")
+	public String extraccion(@RequestParam("numeroCuentaDest")int numeroCuentaDest, @RequestParam("cantidad")int cantidad) {
+		
+		if(bancaService.transferSaldo(this.numeroCuenta,numeroCuentaDest,cantidad)) {
+			return "menu";
+			}
+		else {
+			return "error";
+		}
+	}
+	
+	
+	@GetMapping(value = "ConsultaMovimientos", produces = MediaType.APPLICATION_JSON_VALUE )
+	public @ResponseBody List<MovimientoDto> movimientos(@DateTimeFormat(pattern ="yyyy-MM-dd") @RequestParam("dateIni") Date dateIni,
+			@DateTimeFormat(pattern ="yyyy-MM-dd") @RequestParam("dateEnd") Date dateEnd) {
+		
+		return bancaService.consultarMovimientos(dateIni, dateEnd,this.numeroCuenta);
+	}
+
+
+	
+}

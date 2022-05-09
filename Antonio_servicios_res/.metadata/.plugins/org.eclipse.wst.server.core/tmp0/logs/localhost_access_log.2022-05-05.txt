@@ -1,0 +1,8 @@
+127.0.0.1 - - [05/May/2022:10:15:29 +0200] "GET / HTTP/1.1" 404 687
+0:0:0:0:0:0:0:1 - - [05/May/2022:10:15:30 +0200] "GET /15_formacion_matriculas/ HTTP/1.1" 200 548
+0:0:0:0:0:0:0:1 - - [05/May/2022:10:15:30 +0200] "GET /15_formacion_matriculas/css/global.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [05/May/2022:10:15:33 +0200] "POST /15_formacion_matriculas/Login HTTP/1.1" 200 559
+0:0:0:0:0:0:0:1 - - [05/May/2022:10:15:37 +0200] "GET /15_formacion_matriculas/IngresarDinero.jsp HTTP/1.1" 200 525
+0:0:0:0:0:0:0:1 - - [05/May/2022:10:15:46 +0200] "GET /15_formacion_matriculas/transferirDinero.jsp HTTP/1.1" 200 673
+0:0:0:0:0:0:0:1 - - [05/May/2022:10:15:55 +0200] "GET /15_formacion_matriculas/retirarDinero.jsp HTTP/1.1" 200 504
+0:0:0:0:0:0:0:1 - - [05/May/2022:10:16:00 +0200] "GET /15_formacion_matriculas/consultarMovimientos.jsp HTTP/1.1" 404 689
