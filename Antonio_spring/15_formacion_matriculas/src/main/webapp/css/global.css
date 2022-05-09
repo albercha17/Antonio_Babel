@@ -1,0 +1,38 @@
+@charset "ISO-8859-1";
+
+body {
+	background-color: #408080;
+}
+.inputs{
+	font-size: 24px;
+}
+#loginContainer{
+	margin-top:40px;
+	background-color: white;
+	margin-left: 20%;
+	margin-right: 100px;
+	border-color: black;
+	border-style: solid; 
+}
+#acceder{
+	margin-bottom: 20px;
+}
+
+.divAlta{
+
+    margin-top:40px;
+	background-color: white;
+	margin-left: 20%;
+	margin-right: 100px;
+	border-color: black;
+	border-style: solid; 
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+.botones{
+	color:white;
+	background: #004080;
+	border-color: black;
+	border-style: solid; 
+	margin-bottom: 20px;
+}

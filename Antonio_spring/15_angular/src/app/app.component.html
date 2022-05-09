@@ -1,0 +1,18 @@
+<body>
+  <h1>Menú Principal</h1>
+  <div class="divMenu">
+    <div class="rowStructure">
+      <a href="http://localhost:8080/15_formacion_matriculas/routeAltaAlumno">Alta Alumno</a>
+      <a href="http://localhost:8080/15_formacion_matriculas/routeAltaCurso">Alta Curso</a>
+    </div>
+    <div class="rowStructure">
+      <input type="submit" (click)="routeAlumnosByCurso()" value="Buscar Alumnos por Curso" />
+      <input type="submit" (click)="routeCursosByAlumno()" value="Buscar Cursos por Alumno" />
+    </div>
+    <div class="rowStructure">
+      <input type="submit" (click)="routeMatricularAlumno()" value="Matricular Alumno" />
+      <input type="submit" (click)="routeConsultarMatriculas()" value="Consultar Matrículas" />
+    </div>
+  </div>
+</body>
+<router-outlet></router-outlet>

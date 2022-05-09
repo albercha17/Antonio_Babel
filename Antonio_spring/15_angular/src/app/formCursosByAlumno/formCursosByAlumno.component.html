@@ -1,0 +1,32 @@
+<h2>{{ title }}</h2>
+<div id="divMain">
+  <div id="divDer">
+    <br /><br />
+    <select name="alumnos" [(ngModel)]="alumno">
+      <option *ngFor="let alumno of alumnos">
+        {{ alumno.nombre }}
+      </option>
+    </select>
+
+    <input
+      type="button"
+      value="BuscadorCursosAlumno"
+      (click)="busquedaCursosAlumno()"
+    />
+  </div>
+</div>
+
+<div id="divTables">
+  <table [hidden]="tableCursosHidden" border="2">
+    <thead>
+      <tr>
+        <th>Curso</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let p of cursosAlumno">
+        <td>{{ p.nombre }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,36 @@
+<h2>{{ title }}</h2>
+<div id="divMain">
+  <div id="divIzq">
+    <br /><br />
+    <select name="cursos" [(ngModel)]="curso">
+      <option *ngFor="let curso of cursos">
+        {{ curso.nombre }}
+      </option>
+    </select>
+
+    <input
+      type="button"
+      value="BuscadorAlumnosCurso"
+      (click)="busquedaAlumnosCurso()"
+    />
+  </div>
+</div>
+
+<div id="divTables">
+  <table [hidden]="tableAlumnosHidden" border="2">
+    <thead>
+      <tr>
+        <th>Alumno</th>
+        <th>Email</th>
+        <th>Edad</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let p of alumnosCurso">
+        <td>{{ p.nombre }}</td>
+        <td>{{ p.email }}</td>
+        <td>{{ p.edad }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

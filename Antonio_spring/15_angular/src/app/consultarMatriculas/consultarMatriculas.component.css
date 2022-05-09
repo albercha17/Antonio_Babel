@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap");
+
+/*Quitar margin y padding por defecto*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color: white;
+  margin-top: 2%;
+  text-align: center;
+}
+#divMain {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#divIzq {
+  display: flex;
+  flex-direction: row;
+  margin-right: 2%;
+}
+#divDer {
+  display: flex;
+  flex-direction: row;
+  margin-left: 2%;
+}
+select {
+  font-size: x-large;
+  font-family: "Teko", sans-serif;
+}
+option {
+  font-family: "Teko", sans-serif;
+}
+input {
+  font-size: x-large;
+  margin-left: 5%;
+  background-color: black;
+  color: white;
+  font-family: "Teko", sans-serif;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.inputDate{
+    width: 15vw;
+    background-color: white;
+    color: black;
+}
+a {
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+table {
+  background-color: rgb(255, 255, 255);
+  margin: 5%;
+  font-family: "Teko", sans-serif;
+  font-size: x-large;
+}
+#divTables {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
